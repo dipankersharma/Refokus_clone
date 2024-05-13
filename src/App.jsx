@@ -5,6 +5,7 @@ import Work from './Componenet/Work'
 import Stripes from './Componenet/Stripes'
 import Products from './Componenet/Products'
 import Marquees from './Componenet/Marquees'
+import Cards from './Componenet/Cards'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Stripes/>
       <Products/>
       <Marquees/>
+      <Cards/>
     </div>
   )
 }
