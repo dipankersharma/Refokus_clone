@@ -6,6 +6,7 @@ import Stripes from './Componenet/Stripes'
 import Products from './Componenet/Products'
 import Marquees from './Componenet/Marquees'
 import Cards from './Componenet/Cards'
+import Footer from './Componenet/Footer'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Products/>
       <Marquees/>
       <Cards/>
+      <Footer/>
     </div>
   )
 }
