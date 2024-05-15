@@ -7,8 +7,13 @@ import Products from './Componenet/Products'
 import Marquees from './Componenet/Marquees'
 import Cards from './Componenet/Cards'
 import Footer from './Componenet/Footer'
+import LocomotiveScroll from 'locomotive-scroll';
+
+// we use framer motion and locomotive scrolling
+
 
 function App() {
+  const locomotiveScroll = new LocomotiveScroll();
   return (
     <div className=' w-full bg-zinc-900 pt-3 text-white'>
       <Navbar/> 
