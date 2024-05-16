@@ -42,18 +42,16 @@ function Work() {
     },
   ]);
   const { scrollYProgress } = useScroll();
-
   scrollYProgress.on("change", (data) => {
-    function imagesShow(arr) {
-      setimages((prev) =>
-        prev.map((items, index) =>
-          arr.indexOf(index) === -1
-            ? { ...items, isActive: false }
-            : { ...items, isActive: true }
-        )
-      );
-    }
-
+   
+     function imagesShow(arr){
+       setimages(prev =>(
+        prev.map((item,index)=>(
+            arr.indexOf(index)=== -1 ? ({...item, isActive:false}):{...item, isActive:true}
+        ))
+       ))
+     }
+  
     switch (Math.floor(data * 100)) {
       case 0:
         imagesShow([]);
@@ -76,8 +74,12 @@ function Work() {
       case 6:
         imagesShow([0, 1, 2, 3, 4, 5]);
         break;
-    }
-  });
+    }    
+  })
+
+
+
+  
   return (
     <div className="w-full">
       <div className="relative hero max-w-screen-xl mx-auto flex items-center justify-center mt-5">

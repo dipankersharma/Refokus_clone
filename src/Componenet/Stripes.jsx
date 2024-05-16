@@ -13,7 +13,7 @@ function Stripes() {
   return (
     <div className='flex items-center mt-20'>
       {data.map((elem,index)=>(
-        <Stripe value = {elem} />
+        <Stripe key={index} value = {elem} />
       ))}
     </div>
   )
