@@ -55,28 +55,28 @@ function Products() {
             animate={{ y: -Pos + `rem` }}
             className="w-full h-full"
           >
-            <video loop={true} autoPlay={true} className= {'w-full h-full'}src="src\Componenet\Items\Arqitel project video 4_3.webm"></video>
+            <video loop autoPlay muted className= {'w-full h-full'}src="src\Items\Arqitel project video 4_3.mp4"></video>
           </motion.div>
           <motion.div
             transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
             animate={{ y: -Pos + `rem` }}
             className="w-full h-full "
           >
-            <video loop  className= {'w-full h-full'}src="src\Componenet\Items\Cula_promo_new_4_3.mp4"></video>
+            <video loop autoPlay muted className= {'w-full h-full'}src="src\Items\Cula_promo_new_4_3.mp4"></video>
           </motion.div>
           <motion.div
             transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
             animate={{ y: -Pos + `rem` }}
             className="w-full h-full"
           >
-            <video className= {'w-full h-full'}src="src\Componenet\Items\Maniv-Compressed.mp4"></video>
+            <video loop autoPlay muted className= {'w-full h-full'}src="src\Items\Maniv-Compressed.mp4"></video>
           </motion.div>
           <motion.div
             transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
             animate={{ y: -Pos + `rem` }}
             className="w-full h-full"
           >
-            <video className= {'w-full h-full'}src="src\Componenet\Items\Silvr.webm"></video>
+            <video loop autoPlay muted className= {'w-full h-full'}src="src\Items\Silvr.mp4"></video>
           </motion.div>
         </motion.div>
       </div>

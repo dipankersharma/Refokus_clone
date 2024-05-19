@@ -1,8 +1,10 @@
+import { motion } from 'framer-motion';
 import React from 'react'
+
 import { BsArrowRight } from "react-icons/bs";
-function Card({width,para,head,hover}) {
+function Card({width,para,head,hover="false"}) {
   return (
-    <div className={`bg-zinc-800 p-5 rounded-xl hover:${hover} ${width} min-h-[26rem] flex flex-col justify-between`}>
+    <motion.div whileHover={{backgroundColor: hover==="true" && "#7443ff",padding:"25px"}} className={`bg-zinc-800 p-5 rounded-xl  ${width} min-h-[26rem] flex flex-col justify-between`}>
         <div className='w-full'>
         <div className='w-full flex items-center justify-between'>
        <h3>Our Heading</h3>
@@ -20,7 +22,7 @@ function Card({width,para,head,hover}) {
            {para &&  <p className='text-sm text-zinc-400 font-medium '>Lorem ipsum dolor sit amet, consectetur adipisicing.</p> }
            
         </div>
-    </div>
+    </motion.div>
   )
 }
 
